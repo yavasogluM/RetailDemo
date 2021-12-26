@@ -14,23 +14,14 @@ namespace RetailDemo.API.Controllers
     [Route("api/[controller]")]
     public class HomeController : Controller
     {
-
-        private readonly ICustomerService _customerService;
         private readonly IInvoiceService _invoiceService;
 
-        public HomeController(ICustomerService customerService, IInvoiceService invoiceService)
+        public HomeController(IInvoiceService invoiceService)
         {
-            _customerService = customerService;
             _invoiceService = invoiceService;
         }
 
-        [HttpGet("calculate")]
-        public async Task<string> GetCalculatedDiscount([FromBody] CalculateRequestModel request)
-        {
-            string result = $"test {request}";
-            return result;
-        }
-
-        
+        [HttpPost("calculate-invoice")]
+        public string GetCalculatedDiscount([FromBody] CalculateRequestModel request) => $"Calculated Invoice Price: {_invoiceService.CalculateDiscount(request.Customer, request.Invoice)}";
     }
 }
