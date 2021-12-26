@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Invoices\" />
+    <None Remove="Base\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Invoice\" />
+    <Folder Include="Base\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RetailDemo.Models\RetailDemo.Models.csproj" />
+  </ItemGroup>
+</Project>
