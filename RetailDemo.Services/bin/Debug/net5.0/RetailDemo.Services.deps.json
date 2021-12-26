@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "RetailDemo.Services/1.0.0": {
+        "dependencies": {
+          "RetailDemo.Models": "1.0.0"
+        },
+        "runtime": {
+          "RetailDemo.Services.dll": {}
+        }
+      },
+      "RetailDemo.Models/1.0.0": {
+        "runtime": {
+          "RetailDemo.Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RetailDemo.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RetailDemo.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
