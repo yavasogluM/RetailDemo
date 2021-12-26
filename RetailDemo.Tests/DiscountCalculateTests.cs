@@ -33,14 +33,26 @@ namespace RetailDemo.Tests
         #region Normal Scenario Calculate
 
         [Fact]
-        public void CalculateDiscount()
+        public void CalculateDiscount_SuccessfullTest()
         {
             CustomerModel customerModel = new CustomerModel { Id = 1, Type = CustomerType.LoyalCustomer };
             InvoiceModel invoiceModel = new InvoiceModel { Id = 1, Type = InvoiceType.Normal, TotalPrice = 990 };
             InvoiceService invoiceService = new InvoiceService();
             var result = invoiceService.CalculateDiscount(customerModel, invoiceModel);
 
-            Assert.Equal(945, result);
+            Assert.Equal(Convert.ToDecimal(940.5), result);
+
+        }
+
+        [Fact]
+        public void CalculateDiscount_FailureTest()
+        {
+            CustomerModel customerModel = new CustomerModel { Id = 1, Type = CustomerType.LoyalCustomer };
+            InvoiceModel invoiceModel = new InvoiceModel { Id = 1, Type = InvoiceType.Normal, TotalPrice = 990 };
+            InvoiceService invoiceService = new InvoiceService();
+            var result = invoiceService.CalculateDiscount(customerModel, invoiceModel);
+
+            Assert.NotEqual(945, result);
 
         }
 
