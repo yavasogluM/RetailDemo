@@ -6,6 +6,7 @@ namespace RetailDemo.Services.Invoice
 {
     public class InvoiceService : IInvoiceService
     {
+        //Calculate discount use customer and invoice values
         public decimal CalculateDiscount(CustomerModel customer, InvoiceModel invoice)
         {
             decimal price = invoice.TotalPrice;
@@ -27,7 +28,6 @@ namespace RetailDemo.Services.Invoice
                         return price;
                 }
             }
-
             
             return price;
         }
@@ -40,24 +40,16 @@ namespace RetailDemo.Services.Invoice
             return currentPrice;
         }
 
-        private decimal CalculateForEmployee(InvoiceModel invoice)
-        {
-            //If the user is an employee of the store, he gets a 30% discount.
-            return CalculatePriceByPercentage(invoice, 30);
-        }
+        //If the user is an employee of the store, he gets a 30% discount.
+        private decimal CalculateForEmployee(InvoiceModel invoice) => CalculatePriceByPercentage(invoice, 30);
 
-        private decimal CalculateForAffiliate(InvoiceModel invoice)
-        {
-            //If the user is an affiliate of the store, he gets a 10% discount.
-            return CalculatePriceByPercentage(invoice, 10);
-        }
+        //If the user is an affiliate of the store, he gets a 10% discount.
+        private decimal CalculateForAffiliate(InvoiceModel invoice) => CalculatePriceByPercentage(invoice, 10);
 
-        private decimal CalculateForLoyalCustomer(InvoiceModel invoice)
-        {
-            //If the user has been a customer for over 2 years, he gets a 5 % discount.
-            return CalculatePriceByPercentage(invoice, 5);
-        }
+        //If the user has been a customer for over 2 years, he gets a 5 % discount.
+        private decimal CalculateForLoyalCustomer(InvoiceModel invoice) => CalculatePriceByPercentage(invoice, 5);
 
+        //Calculates price use percentage
         private decimal CalculatePriceByPercentage(InvoiceModel invoice, decimal percentage) => invoice.TotalPrice - ((invoice.TotalPrice / 100) * percentage);
 
     }

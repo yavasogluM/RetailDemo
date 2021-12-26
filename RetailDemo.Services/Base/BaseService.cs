@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace RetailDemo.Services.Base
 {
+    //TODO: we can implement DB or specific common methods with this class
     public class BaseService<T> : IBaseService<T>  where T : class
     {
         public BaseService()
