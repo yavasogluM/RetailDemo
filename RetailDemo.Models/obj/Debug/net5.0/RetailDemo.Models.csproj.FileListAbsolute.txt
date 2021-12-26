@@ -1,0 +1,11 @@
+/Users/metin.yavasoglu/TestSolution/RetailDemo/RetailDemo/RetailDemo.Models/bin/Debug/net5.0/RetailDemo.Models.deps.json
+/Users/metin.yavasoglu/TestSolution/RetailDemo/RetailDemo/RetailDemo.Models/bin/Debug/net5.0/RetailDemo.Models.dll
+/Users/metin.yavasoglu/TestSolution/RetailDemo/RetailDemo/RetailDemo.Models/bin/Debug/net5.0/ref/RetailDemo.Models.dll
+/Users/metin.yavasoglu/TestSolution/RetailDemo/RetailDemo/RetailDemo.Models/bin/Debug/net5.0/RetailDemo.Models.pdb
+/Users/metin.yavasoglu/TestSolution/RetailDemo/RetailDemo/RetailDemo.Models/obj/Debug/net5.0/RetailDemo.Models.GeneratedMSBuildEditorConfig.editorconfig
+/Users/metin.yavasoglu/TestSolution/RetailDemo/RetailDemo/RetailDemo.Models/obj/Debug/net5.0/RetailDemo.Models.AssemblyInfoInputs.cache
+/Users/metin.yavasoglu/TestSolution/RetailDemo/RetailDemo/RetailDemo.Models/obj/Debug/net5.0/RetailDemo.Models.AssemblyInfo.cs
+/Users/metin.yavasoglu/TestSolution/RetailDemo/RetailDemo/RetailDemo.Models/obj/Debug/net5.0/RetailDemo.Models.csproj.CoreCompileInputs.cache
+/Users/metin.yavasoglu/TestSolution/RetailDemo/RetailDemo/RetailDemo.Models/obj/Debug/net5.0/RetailDemo.Models.dll
+/Users/metin.yavasoglu/TestSolution/RetailDemo/RetailDemo/RetailDemo.Models/obj/Debug/net5.0/ref/RetailDemo.Models.dll
+/Users/metin.yavasoglu/TestSolution/RetailDemo/RetailDemo/RetailDemo.Models/obj/Debug/net5.0/RetailDemo.Models.pdb
