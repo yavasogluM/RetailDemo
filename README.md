@@ -1,4 +1,4 @@
-# RetailDemo
+# Retail Demo
 
 API and Test projects gives discounted price of customer's invoice to you. You can test your datas at .Tests solution and also you can try API with following "Data Examples"
 
